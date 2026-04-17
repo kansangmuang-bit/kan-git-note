@@ -12,3 +12,4 @@ lambda x, y: x + y
 addstuff = lambda x, y: x + y
 print(addstuff(1, 2))
 
+

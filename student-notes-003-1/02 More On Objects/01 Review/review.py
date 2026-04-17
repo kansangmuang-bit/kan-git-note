@@ -1,10 +1,12 @@
 
 class Fruit:
     
+    # class variables
     MIN_SWEET = 0
     MAX_SWEET = 1
     
     def __init__(self, color="Orange"):
+        # instance vars
         # 0 is not sweet 
         # 1 is max sweet
         self._sweetness = None
@@ -24,23 +26,28 @@ class Fruit:
             self._sweetness = Fruit.MAX_SWEET 
         else:
             self._sweetness = value
-    
+            
     def rot(self):
         self.color = "brown"
         self.shape = "flat"
-      
+    
     def __str__(self):
         return f"Shape: {self.shape}\nColor: {self.color}"
+    
 
 class Juice:
-    pass   
+    pass 
 
 class Orange(Fruit):
     
     def __init__(self):
+        # do one of these for inheritance
         super().__init__("Orange")
-        # Fruit.__init__(self, "Orange")
+        # Fruit.__init__(self, "Orange") 
         self.juice = Juice()
+        
+
+    
 
 f = Fruit()
 f2 = Fruit("red")

@@ -26,4 +26,3 @@ print(first)
 user["password"] = "qwerty"  
 user["firstname"] = "John"
 print(user)
-
